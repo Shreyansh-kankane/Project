@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-return <Wrapper></Wrapper>;
+const SingleProduct = () => {
+  return <h1>single page </h1>;
+};
 
 const Wrapper = styled.section`
   .container {
@@ -12,7 +14,6 @@ const Wrapper = styled.section`
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
-
     .product-data-warranty {
       width: 100%;
       display: flex;
@@ -20,10 +21,8 @@ const Wrapper = styled.section`
       align-items: center;
       border-bottom: 1px solid #ccc;
       margin-bottom: 1rem;
-
       .product-warranty-data {
         text-align: center;
-
         .warranty-icon {
           background-color: rgba(220, 220, 220, 0.5);
           border-radius: 50%;
@@ -37,7 +36,6 @@ const Wrapper = styled.section`
         }
       }
     }
-
     .product-data-price {
       font-weight: bold;
     }
@@ -49,12 +47,10 @@ const Wrapper = styled.section`
       flex-direction: column;
       gap: 1rem;
       font-size: 1.8rem;
-
       span {
         font-weight: bold;
       }
     }
-
     hr {
       max-width: 100%;
       width: 90%;
@@ -63,13 +59,11 @@ const Wrapper = styled.section`
       color: red;
     }
   }
-
   .product-images {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     padding: 0 2.4rem;
   }
